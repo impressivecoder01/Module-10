@@ -21,9 +21,22 @@
         }
         .box{
             border: var(--border);
+            width: calc(80% - 300px);
         }
         h3{
             background-color: var(--background-color);
+        }
+        .container{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 200px calc(100% - 200px - 20px);
+            grid-template-rows: 200px ;
+        }
+        .sidebar{
+            background-color: lightblue;
+        }
+        .content{
+            background-color: lightcoral;
         }
     </style>
 </head>
@@ -33,6 +46,10 @@
     <div class="box">
         <h3>I am doing something</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ex quisquam voluptatibus eius libero. Ex molestiae natus esse facilis consectetur. Amet ipsa fuga nemo incidunt optio. Dolore iusto laborum minima.</p>
+    </div>
+    <div class="container">
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Main content</div>
     </div>
 </body>
 </html>
