@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(Advanced) css custom property and use var, calc</title>
+    <style>
+        :root{
+            --primary-color: greenyellow;
+            --background-color: yellow;
+            --border:1px solid red;
+        }
+        h1{
+            color: greenyellow;
+        }
+        h5{
+            background-color: greenyellow;
+        }
+        .box p{
+            color: var(--background-color);
+        }
+        .box{
+            border: var(--border);
+        }
+        h3{
+            background-color: var(--background-color);
+        }
+    </style>
+</head>
+<body>
+    <h1>My custom properties</h1>
+    <h5>Also commonly known as css variables</h5>
+    <div class="box">
+        <h3>I am doing something</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ex quisquam voluptatibus eius libero. Ex molestiae natus esse facilis consectetur. Amet ipsa fuga nemo incidunt optio. Dolore iusto laborum minima.</p>
+    </div>
+</body>
+</html>
