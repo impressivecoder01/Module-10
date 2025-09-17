@@ -12,14 +12,16 @@
             /* property name, duration, easing function, delay */
             transition: width 4s ease-out 2s , transform 4s ease-in 1s;
         }
-        
+        p{
+            transition: transform 2s linear 1s;
+        }
         .box:hover{
             width: 400px;
             /* background-color: rebeccapurple; */
             transform: rotate(45deg);
         }
-        p:hover{
-            transform: scale(2) translate(40px);
+        .box:hover p{
+            transform: scale(2) translate(40px) ;
             
         }
         
